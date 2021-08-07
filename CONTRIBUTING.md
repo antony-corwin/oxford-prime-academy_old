@@ -1,57 +1,73 @@
-# Contributing to Angular Boilerplate
+[comment]: <> (# Contributing to Angular Boilerplate)
 
-We want to make contributing to this project as easy and transparent as possible, whether it's:
+[comment]: <> (We want to make contributing to this project as easy and transparent as possible, whether it's:)
 
-- Reporting a bug
-- Discussing the current state of the code
-- Submitting a fix
-- Proposing new features
-- Becoming a maintainer
+[comment]: <> (- Reporting a bug)
 
-## We Develop with Github
+[comment]: <> (- Discussing the current state of the code)
 
-We use github to host code, to track issues and feature requests, as well as accept pull requests.
+[comment]: <> (- Submitting a fix)
 
-## We Use [Github Flow](https://guides.github.com/introduction/flow/index.html), So All Code Changes Happen Through Pull Requests
+[comment]: <> (- Proposing new features)
 
-Pull requests are the best way to propose changes to the codebase (we use [Github Flow](https://guides.github.com/introduction/flow/index.html)). We actively welcome your pull requests:
+[comment]: <> (- Becoming a maintainer)
 
-1. Fork the repo and create your branch from `develop`.
-2. If you've added code that should be tested, add tests.
-3. If you've changed APIs, update the documentation.
-4. Ensure the test suite passes.
-5. Make sure your code lints.
-6. Submit the pull request picking "develop" as the base branch.
+[comment]: <> (## We Develop with Github)
 
-## Any contributions you make will be under the MIT Software License
+[comment]: <> (We use github to host code, to track issues and feature requests, as well as accept pull requests.)
 
-In short, when you submit code changes, your submissions are understood to be under the same [MIT License](http://choosealicense.com/licenses/mit/) that covers the project. Feel free to contact the maintainers if that's a concern.
+[comment]: <> (## We Use [Github Flow]&#40;https://guides.github.com/introduction/flow/index.html&#41;, So All Code Changes Happen Through Pull Requests)
 
-## Report bugs using Github's [issues](https://github.com/juanmesa2097/angular-boilerplate/issues)
+[comment]: <> (Pull requests are the best way to propose changes to the codebase &#40;we use [Github Flow]&#40;https://guides.github.com/introduction/flow/index.html&#41;&#41;. We actively welcome your pull requests:)
 
-We use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://docs.github.com/en/github/managing-your-work-on-github/creating-an-issue)
+[comment]: <> (1. Fork the repo and create your branch from `develop`.)
 
-## Write bug reports with detail, background, and sample code
+[comment]: <> (2. If you've added code that should be tested, add tests.)
 
-**Great Bug Reports** tend to have:
+[comment]: <> (3. If you've changed APIs, update the documentation.)
 
-- A quick summary and/or background
-- Steps to reproduce
-  - Be specific!
-  - Give sample code if you can.
-- What you expected would happen
-- What actually happens
-- Notes (possibly including why you think this might be happening, or stuff you tried that didn't work)
+[comment]: <> (4. Ensure the test suite passes.)
 
-## Use a Consistent Coding Style
+[comment]: <> (5. Make sure your code lints.)
 
-- 2 spaces for indentation rather than tabs
-- You can try running `npm run lint` for style unification
+[comment]: <> (6. Submit the pull request picking "develop" as the base branch.)
 
-## License
+[comment]: <> (## Any contributions you make will be under the MIT Software License)
 
-By contributing, you agree that your contributions will be licensed under its MIT License.
+[comment]: <> (In short, when you submit code changes, your submissions are understood to be under the same [MIT License]&#40;http://choosealicense.com/licenses/mit/&#41; that covers the project. Feel free to contact the maintainers if that's a concern.)
 
-## References
+[comment]: <> (## Report bugs using Github's [issues]&#40;https://github.com/juanmesa2097/angular-boilerplate/issues&#41;)
 
-This document was adapted from the open-source contribution guidelines for [Facebook's Draft](https://github.com/facebook/draft-js/blob/a9316a723f9e918afde44dea68b5f9f39b7d9b00/CONTRIBUTING.md)
+[comment]: <> (We use GitHub issues to track public bugs. Report a bug by [opening a new issue]&#40;https://docs.github.com/en/github/managing-your-work-on-github/creating-an-issue&#41;)
+
+[comment]: <> (## Write bug reports with detail, background, and sample code)
+
+[comment]: <> (**Great Bug Reports** tend to have:)
+
+[comment]: <> (- A quick summary and/or background)
+
+[comment]: <> (- Steps to reproduce)
+
+[comment]: <> (  - Be specific!)
+
+[comment]: <> (  - Give sample code if you can.)
+
+[comment]: <> (- What you expected would happen)
+
+[comment]: <> (- What actually happens)
+
+[comment]: <> (- Notes &#40;possibly including why you think this might be happening, or stuff you tried that didn't work&#41;)
+
+[comment]: <> (## Use a Consistent Coding Style)
+
+[comment]: <> (- 2 spaces for indentation rather than tabs)
+
+[comment]: <> (- You can try running `npm run lint` for style unification)
+
+[comment]: <> (## License)
+
+[comment]: <> (By contributing, you agree that your contributions will be licensed under its MIT License.)
+
+[comment]: <> (## References)
+
+[comment]: <> (This document was adapted from the open-source contribution guidelines for [Facebook's Draft]&#40;https://github.com/facebook/draft-js/blob/a9316a723f9e918afde44dea68b5f9f39b7d9b00/CONTRIBUTING.md&#41;)
