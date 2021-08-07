@@ -1,4 +1,4 @@
-<h1 align="center">Angular Boilerplate</h1>
+<h1 align="center">oxford-prime-academy</h1>
 
 <p align="center">
   <img src="https://img.icons8.com/ios-filled/150/000000/angularjs.png" alt="angular-logo" width="120px" height="120px"/>
