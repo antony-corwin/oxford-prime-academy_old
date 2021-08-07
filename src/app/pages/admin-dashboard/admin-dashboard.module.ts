@@ -1,16 +1,16 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { DashboardPage } from './dashboard.page';
+import { AdminDashboardPage } from './admin-dashboard.page';
 
 @NgModule({
-  declarations: [DashboardPage],
+  declarations: [AdminDashboardPage],
   imports: [
     CommonModule,
     RouterModule.forChild([
       {
         path: '',
-        component: DashboardPage,
+        component: AdminDashboardPage,
         data: {
           title: 'Dashboard',
           robots: 'noindex, nofollow',
@@ -19,4 +19,5 @@ import { DashboardPage } from './dashboard.page';
     ]),
   ],
 })
-export class DashboardModule {}
+export class AdminDashboardModule {
+}

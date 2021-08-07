@@ -24,7 +24,7 @@ const APP_ROUTES: Routes = [
   {
     path: ROUTER_UTILS.config.base.dashboard,
     loadChildren: async () =>
-      (await import('@pages/dashboard/dashboard.module')).DashboardModule,
+      (await import('@pages/admin-dashboard/admin-dashboard.module')).AdminDashboardModule,
     canLoad: [AuthGuard],
   },
   {
