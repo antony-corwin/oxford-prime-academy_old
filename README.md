@@ -1,302 +1,461 @@
-<h1 align="center">oxford-prime-academy</h1>
-
-<p align="center">
-  <img src="https://img.icons8.com/ios-filled/150/000000/angularjs.png" alt="angular-logo" width="120px" height="120px"/>
-  <br>
-  <i>Angular starter for enterprise-grade front-end projects, built under a clean architecture 
-    <br> that helps to scale and maintain a fast workflow.</i>
-  <br>
-</p>
-
-<p align="center">
-  <a href="https://angularboilerplate.vercel.app"><strong>https://angularboilerplate.vercel.app</strong></a>
-  <br>
-</p>
-
-<p align="center">
-  <a href="CONTRIBUTING.md">Contributing Guidelines</a>
-  ·
-  <a href="https://github.com/juanmesa2097/angular-boilerplate/issues">Submit an Issue</a>
-  <br>
-  <br>
-</p>
-
-<p align="center">
-  <a href="https://github.com/facebook/jest">
-    <img src="https://jestjs.io/img/jest-badge.svg" alt="unit tests with Jest" />
-  </a>&nbsp;
-  <a href="https://www.cypress.io">
-    <img src="https://img.shields.io/badge/tested%20with-Cypress-04C38E.svg" alt="e2e with Cypress" />
-  </a>&nbsp;
-  <a href="https://github.com/juanmesa2097/angular-boilerplate/issues">
-    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="Contributions welcome" />
-  </a>
-</p>
-
-<hr>
-
-## ⚗️ Features
-
-- Strict mode.
-- Lazy loading.
-- Smart and pure components pattern.
-- SCAM pattern.
-- Self-contained components and encapsulated modules.
-- Components types (e.g. component, page).
-- Amazing directory structure.
-- Unit tests with Jest instead of Karma & Jasmine.
-- e2e tests with Cypress instead of Protractor.
-- PWA
-- Dynamic titles and content meta tags.
-- TailwindCSS + Autoprefixer + PurgeCSS setup.
-- Dark mode and theme configuration.
-- Scalable CSS architecture in favor of TailwindCSS layers.
-- [Lighthouse](https://developers.google.com/web/tools/lighthouse) reports improved.
-- Migration from TSLint to ESLint.
-- Run unit tests & lint code on Git Hooks using [Husky](https://github.com/typicode/husky) & validate commit messages using [commitlint](https://github.com/conventional-changelog/commitlint)
-- GitHub Actions workflows for code analysis and unit tests.
-
-## 📄 Pages
+[comment]: <> (<h1 align="center">oxford-prime-academy</h1>)
 
-```
-Types of pages
+[comment]: <> (<p align="center">)
 
-public: everybody can see them
-private: only logged in users can see them
-```
+[comment]: <> (  <img src="https://img.icons8.com/ios-filled/150/000000/angularjs.png" alt="angular-logo" width="120px" height="120px"/>)
 
-- General
-  - home
-  - not-found
-- Auth
-  - sign-in
-  - sign-up
-  - forgot-password
-  - forgot-password-email-sent
-  - password-reset
-  - password-reset-succeeded
-  - password-reset-failed
-- Settings
-  - account
-  - appearance
-  - billing
-  - blocked-Users
-  - notifications
-  - security
-  - security-log
-- User
-  - my-profile
-  - overview
-- Features
-  - dashboard
+[comment]: <> (  <br>)
 
-## 🧱 Self-contained components
+[comment]: <> (  <i>Angular starter for enterprise-grade front-end projects, built under a clean architecture )
 
-- footer
-- header
-- layout
+[comment]: <> (    <br> that helps to scale and maintain a fast workflow.</i>)
 
-## 📡 Services
+[comment]: <> (  <br>)
 
-- AuthService
-- SeoService
-- ThemeService
+[comment]: <> (</p>)
 
-## 📛 Custom directives
+[comment]: <> (<p align="center">)
 
-- click-outside (detects when the user clicks outside an element).
+[comment]: <> (  <a href="https://angularboilerplate.vercel.app"><strong>https://angularboilerplate.vercel.app</strong></a>)
 
-## 🧪 Custom pipes
+[comment]: <> (  <br>)
 
-- bytes (transforms a numeric value into bytes, KB, MB, GB, etc.).
+[comment]: <> (</p>)
 
-## 🛠️ Make some initial tweaks
+[comment]: <> (<p align="center">)
 
-- Change application title:
+[comment]: <> (  <a href="CONTRIBUTING.md">Contributing Guidelines</a>)
 
-  Go to `src/index.html` and inside the `title` tag, replace "Angular Boilerplate" with your app name.
+[comment]: <> (  ·)
 
-- Change paths of the pages:
+[comment]: <> (  <a href="https://github.com/juanmesa2097/angular-boilerplate/issues">Submit an Issue</a>)
 
-  Go to `src/app/core/utils/router.utils.ts` to find all the registered routes inside a config object.
+[comment]: <> (  <br>)
 
-  For example, you could replace `sign-in` with `SignIn`, `login` or `iniciar_sesion`
+[comment]: <> (  <br>)
 
-- Change titles, descriptions, and robots of the pages:
+[comment]: <> (</p>)
 
-  Every page has a `.route` file that contains an exported constant that holds the title, description and a robot's metatag that indicates if it can be indexed or followed by a web crawler.
+[comment]: <> (<p align="center">)
 
-- Change your TailwindCSS configuration:
+[comment]: <> (  <a href="https://github.com/facebook/jest">)
 
-  You can find the config file in the project root, then you can refer to https://tailwindcss.com/docs/configuration to learn how to make your own adjustments.
+[comment]: <> (    <img src="https://jestjs.io/img/jest-badge.svg" alt="unit tests with Jest" />)
 
-- Set a default theme (First time load)
+[comment]: <> (  </a>&nbsp;)
 
-  Go to `src\app\@core\services\theme\theme.config.ts` and change the following line of code
+[comment]: <> (  <a href="https://www.cypress.io">)
 
-  from operating system preference
+[comment]: <> (    <img src="https://img.shields.io/badge/tested%20with-Cypress-04C38E.svg" alt="e2e with Cypress" />)
 
-  ```ts
-  export const DEFAULT_BASE_THEME = ThemeList.System;
-  ```
+[comment]: <> (  </a>&nbsp;)
 
-  to light mode
+[comment]: <> (  <a href="https://github.com/juanmesa2097/angular-boilerplate/issues">)
 
-  ```ts
-  export const DEFAULT_BASE_THEME = ThemeList.Light;
-  ```
+[comment]: <> (    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="Contributions welcome" />)
 
-  or dark mode
+[comment]: <> (  </a>)
 
-  ```ts
-  export const DEFAULT_BASE_THEME = ThemeList.Dark;
-  ```
+[comment]: <> (</p>)
 
-## 🗑️ Remove features
+[comment]: <> (<hr>)
 
-There are certain features that you may or may not like to have in your projects, and here's how to remove them:
+[comment]: <> (## ⚗️ Features)
 
-### 🌠 Husky & commitlint
+[comment]: <> (- Strict mode.)
 
-> Husky allows you to easily run scripts on Git Hooks & commitlint validates if a commit message follows a certain convention.
+[comment]: <> (- Lazy loading.)
 
-- Remove execution of tests and linting on pre-commit:
+[comment]: <> (- Smart and pure components pattern.)
 
-  - Go to `angular-boilerplate\.husky` and remove the npm scripts inside the `pre-commit` file or the file itself.
+[comment]: <> (- SCAM pattern.)
 
-- Remove execution of build on pre-push:
+[comment]: <> (- Self-contained components and encapsulated modules.)
 
-  - Go to `angular-boilerplate\.husky` and remove the npm scripts inside the `pre-push` file or the file itself.
+[comment]: <> (- Components types &#40;e.g. component, page&#41;.)
 
-- Remove conventional commit messages validation:
+[comment]: <> (- Amazing directory structure.)
 
-  1. Go to `angular-boilerplate\.husky` and remove the command `npx commitlint --edit $1` inside the `commit-msg` file or the file itself.
-  2. Remove the file `angular-boilerplate\.commitlintrc`.
-  3. Run the following command:
+[comment]: <> (- Unit tests with Jest instead of Karma & Jasmine.)
 
-  ```
-  npm uninstall @commitlint/cli @commitlint/config-conventional
-  ```
+[comment]: <> (- e2e tests with Cypress instead of Protractor.)
 
-  OR
+[comment]: <> (- PWA)
 
-  ```
-  yarn remove @commitlint/cli @commitlint/config-conventional
-  ```
+[comment]: <> (- Dynamic titles and content meta tags.)
 
-- Fully remove Husky & commitlint
+[comment]: <> (- TailwindCSS + Autoprefixer + PurgeCSS setup.)
 
-  1. Remove the folder `angular-boilerplate\.husky`.
-  2. Remove the file `angular-boilerplate\.commitlintrc`.
-  3. Run the following commands:
+[comment]: <> (- Dark mode and theme configuration.)
 
-  ```
-  npm uninstall husky @commitlint/cli @commitlint/config-conventional
-  ```
+[comment]: <> (- Scalable CSS architecture in favor of TailwindCSS layers.)
 
-  OR
+[comment]: <> (- [Lighthouse]&#40;https://developers.google.com/web/tools/lighthouse&#41; reports improved.)
 
-  ```
-  yarn remove husky @commitlint/cli @commitlint/config-conventional
-  ```
+[comment]: <> (- Migration from TSLint to ESLint.)
 
-### 🌠 GitHub Actions workflows
+[comment]: <> (- Run unit tests & lint code on Git Hooks using [Husky]&#40;https://github.com/typicode/husky&#41; & validate commit messages using [commitlint]&#40;https://github.com/conventional-changelog/commitlint&#41;)
 
-> A GitHub Action workflow is a configurable automated process made up of one or more jobs that will help us to validate if some actions pass before we integrate new code into the repository (E.g., run unit tests on pull-requests or branch pushes).
+[comment]: <> (- GitHub Actions workflows for code analysis and unit tests.)
 
-- Remove CodeQL analysis:
+[comment]: <> (## 📄 Pages)
 
-  - Go to `angular-boilerplate\.github\workflows` and remove the file codeql-analysis.yml
+[comment]: <> (```)
 
-- Remove tests workflow:
+[comment]: <> (Types of pages)
 
-  - Go to `angular-boilerplate\.github\workflows` and remove the file test.yml
+[comment]: <> (public: everybody can see them)
 
-### 🌠 TailwindCSS
+[comment]: <> (private: only logged in users can see them)
 
-> TailwindCSS is a utility-first CSS Framework fully customizable & fully tree shakeable. If you want to replace it with another CSS framework or don't want to use a CSS framework at all, you can easily remove it from the project.
+[comment]: <> (```)
 
-1. Remove `angular-boilerplate\tailwind.config.js` file.
-2. Run the following command:
+[comment]: <> (- General)
 
-```
-npm uninstall tailwindcss autoprefixer postcss
-```
+[comment]: <> (  - home)
 
-OR
+[comment]: <> (  - not-found)
 
-```
-yarn remove tailwindcss autoprefixer postcss
-```
+[comment]: <> (- Auth)
 
-## ⛩️ Project structure
+[comment]: <> (  - sign-in)
 
-```console
-├───app
-│   ├───@core
-│   │   ├───directives
-│   │   │   └───click-outside
-│   │   ├───guards
-│   │   ├───interceptors
-│   │   ├───pipes
-│   │   │   └───bytes
-│   │   ├───services
-│   │   │   ├───seo
-│   │   │   └───theme
-│   │   └───utils
-│   ├───@shell
-│   │   ├───ft
-│   │   └───ui (layout components)
-│   │       ├───footer
-│   │       ├───header
-│   │       ├───layout
-│   │       └───not-found
-│   ├───components (generic shared components)
-│   └───pages
-│       ├───auth
-│       │   ├───pages
-│       │   │   ├───forgot-password
-│       │   │   ├───forgot-password-email-sent
-│       │   │   ├───password-reset
-│       │   │   ├───password-reset-failed
-│       │   │   ├───password-reset-succeeded
-│       │   │   ├───sign-in
-│       │   │   └───sign-up
-│       │   └───services
-│       ├───dashboard
-│       ├───home
-│       ├───settings
-│       │   └───pages
-│       │       ├───account
-│       │       ├───appearance
-│       │       ├───billing
-│       │       ├───blocked-users
-│       │       ├───notifications
-│       │       ├───security
-│       │       └───security-log
-│       └───user
-│           └───pages
-│               ├───my-profile
-│               └───overview
-├───assets
-├───environments
-└───theme
-    ├───01-base
-    ├───02-components
-    └───03-utilities
-```
+[comment]: <> (  - sign-up)
 
-## 🧙‍♂️ Commands
+[comment]: <> (  - forgot-password)
 
-| Command       | Description                                                    | NPM                   | Yarn               | Background command                                          |
-| ------------- | -------------------------------------------------------------- | --------------------- | ------------------ | ----------------------------------------------------------- |
-| ng            | See available commands                                         | npm run ng            | yarn ng            | ng                                                          |
-| start         | Run your app in development mode                               | npm start             | yarn start         | ng serve                                                    |
-| build         | Build your app for production                                  | npm run build         | yarn build         | ng build                                                    |
-| build:stats   | Build your app for production and generate a "stats.json" file | npm run build:stats   | yarn build:stats   | ng build --stats-json                                       |
-| watch         | Run build when files change.                                   | npm run watch         | yarn watch         | ng build --watch --configuration development                |
-| test:unit     | Run your unit tests                                            | npm run test          | yarn test          | ng test                                                     |
-| test:e2e      | Run your e2e tests                                             | npm run e2e           | yarn e2e           | ng e2e                                                      |
-| test:coverage | Run your unit tests & generates a coverage report              | npm run test:coverage | yarn test:coverage | ng test --coverage                                          |
-| lint          | Use ESLint to lint your app                                    | npm run lint          | yarn lint          | ng lint                                                     |
-| analyze       | Open webpack-bundle-analyzer                                   | npm run analyze       | yarn analyze       | webpack-bundle-analyzer dist/angular-boilerplate/stats.json |
+[comment]: <> (  - forgot-password-email-sent)
+
+[comment]: <> (  - password-reset)
+
+[comment]: <> (  - password-reset-succeeded)
+
+[comment]: <> (  - password-reset-failed)
+
+[comment]: <> (- Settings)
+
+[comment]: <> (  - account)
+
+[comment]: <> (  - appearance)
+
+[comment]: <> (  - billing)
+
+[comment]: <> (  - blocked-Users)
+
+[comment]: <> (  - notifications)
+
+[comment]: <> (  - security)
+
+[comment]: <> (  - security-log)
+
+[comment]: <> (- User)
+
+[comment]: <> (  - my-profile)
+
+[comment]: <> (  - overview)
+
+[comment]: <> (- Features)
+
+[comment]: <> (  - dashboard)
+
+[comment]: <> (## 🧱 Self-contained components)
+
+[comment]: <> (- footer)
+
+[comment]: <> (- header)
+
+[comment]: <> (- layout)
+
+[comment]: <> (## 📡 Services)
+
+[comment]: <> (- AuthService)
+
+[comment]: <> (- SeoService)
+
+[comment]: <> (- ThemeService)
+
+[comment]: <> (## 📛 Custom directives)
+
+[comment]: <> (- click-outside &#40;detects when the user clicks outside an element&#41;.)
+
+[comment]: <> (## 🧪 Custom pipes)
+
+[comment]: <> (- bytes &#40;transforms a numeric value into bytes, KB, MB, GB, etc.&#41;.)
+
+[comment]: <> (## 🛠️ Make some initial tweaks)
+
+[comment]: <> (- Change application title:)
+
+[comment]: <> (  Go to `src/index.html` and inside the `title` tag, replace "Angular Boilerplate" with your app name.)
+
+[comment]: <> (- Change paths of the pages:)
+
+[comment]: <> (  Go to `src/app/core/utils/router.utils.ts` to find all the registered routes inside a config object.)
+
+[comment]: <> (  For example, you could replace `sign-in` with `SignIn`, `login` or `iniciar_sesion`)
+
+[comment]: <> (- Change titles, descriptions, and robots of the pages:)
+
+[comment]: <> (  Every page has a `.route` file that contains an exported constant that holds the title, description and a robot's metatag that indicates if it can be indexed or followed by a web crawler.)
+
+[comment]: <> (- Change your TailwindCSS configuration:)
+
+[comment]: <> (  You can find the config file in the project root, then you can refer to https://tailwindcss.com/docs/configuration to learn how to make your own adjustments.)
+
+[comment]: <> (- Set a default theme &#40;First time load&#41;)
+
+[comment]: <> (  Go to `src\app\@core\services\theme\theme.config.ts` and change the following line of code)
+
+[comment]: <> (  from operating system preference)
+
+[comment]: <> (  ```ts)
+
+[comment]: <> (  export const DEFAULT_BASE_THEME = ThemeList.System;)
+
+[comment]: <> (  ```)
+
+[comment]: <> (  to light mode)
+
+[comment]: <> (  ```ts)
+
+[comment]: <> (  export const DEFAULT_BASE_THEME = ThemeList.Light;)
+
+[comment]: <> (  ```)
+
+[comment]: <> (  or dark mode)
+
+[comment]: <> (  ```ts)
+
+[comment]: <> (  export const DEFAULT_BASE_THEME = ThemeList.Dark;)
+
+[comment]: <> (  ```)
+
+[comment]: <> (## 🗑️ Remove features)
+
+[comment]: <> (There are certain features that you may or may not like to have in your projects, and here's how to remove them:)
+
+[comment]: <> (### 🌠 Husky & commitlint)
+
+[comment]: <> (> Husky allows you to easily run scripts on Git Hooks & commitlint validates if a commit message follows a certain convention.)
+
+[comment]: <> (- Remove execution of tests and linting on pre-commit:)
+
+[comment]: <> (  - Go to `angular-boilerplate\.husky` and remove the npm scripts inside the `pre-commit` file or the file itself.)
+
+[comment]: <> (- Remove execution of build on pre-push:)
+
+[comment]: <> (  - Go to `angular-boilerplate\.husky` and remove the npm scripts inside the `pre-push` file or the file itself.)
+
+[comment]: <> (- Remove conventional commit messages validation:)
+
+[comment]: <> (  1. Go to `angular-boilerplate\.husky` and remove the command `npx commitlint --edit $1` inside the `commit-msg` file or the file itself.)
+
+[comment]: <> (  2. Remove the file `angular-boilerplate\.commitlintrc`.)
+
+[comment]: <> (  3. Run the following command:)
+
+[comment]: <> (  ```)
+
+[comment]: <> (  npm uninstall @commitlint/cli @commitlint/config-conventional)
+
+[comment]: <> (  ```)
+
+[comment]: <> (  OR)
+
+[comment]: <> (  ```)
+
+[comment]: <> (  yarn remove @commitlint/cli @commitlint/config-conventional)
+
+[comment]: <> (  ```)
+
+[comment]: <> (- Fully remove Husky & commitlint)
+
+[comment]: <> (  1. Remove the folder `angular-boilerplate\.husky`.)
+
+[comment]: <> (  2. Remove the file `angular-boilerplate\.commitlintrc`.)
+
+[comment]: <> (  3. Run the following commands:)
+
+[comment]: <> (  ```)
+
+[comment]: <> (  npm uninstall husky @commitlint/cli @commitlint/config-conventional)
+
+[comment]: <> (  ```)
+
+[comment]: <> (  OR)
+
+[comment]: <> (  ```)
+
+[comment]: <> (  yarn remove husky @commitlint/cli @commitlint/config-conventional)
+
+[comment]: <> (  ```)
+
+[comment]: <> (### 🌠 GitHub Actions workflows)
+
+[comment]: <> (> A GitHub Action workflow is a configurable automated process made up of one or more jobs that will help us to validate if some actions pass before we integrate new code into the repository &#40;E.g., run unit tests on pull-requests or branch pushes&#41;.)
+
+[comment]: <> (- Remove CodeQL analysis:)
+
+[comment]: <> (  - Go to `angular-boilerplate\.github\workflows` and remove the file codeql-analysis.yml)
+
+[comment]: <> (- Remove tests workflow:)
+
+[comment]: <> (  - Go to `angular-boilerplate\.github\workflows` and remove the file test.yml)
+
+[comment]: <> (### 🌠 TailwindCSS)
+
+[comment]: <> (> TailwindCSS is a utility-first CSS Framework fully customizable & fully tree shakeable. If you want to replace it with another CSS framework or don't want to use a CSS framework at all, you can easily remove it from the project.)
+
+[comment]: <> (1. Remove `angular-boilerplate\tailwind.config.js` file.)
+
+[comment]: <> (2. Run the following command:)
+
+[comment]: <> (```)
+
+[comment]: <> (npm uninstall tailwindcss autoprefixer postcss)
+
+[comment]: <> (```)
+
+[comment]: <> (OR)
+
+[comment]: <> (```)
+
+[comment]: <> (yarn remove tailwindcss autoprefixer postcss)
+
+[comment]: <> (```)
+
+[comment]: <> (## ⛩️ Project structure)
+
+[comment]: <> (```console)
+
+[comment]: <> (├───app)
+
+[comment]: <> (│   ├───@core)
+
+[comment]: <> (│   │   ├───directives)
+
+[comment]: <> (│   │   │   └───click-outside)
+
+[comment]: <> (│   │   ├───guards)
+
+[comment]: <> (│   │   ├───interceptors)
+
+[comment]: <> (│   │   ├───pipes)
+
+[comment]: <> (│   │   │   └───bytes)
+
+[comment]: <> (│   │   ├───services)
+
+[comment]: <> (│   │   │   ├───seo)
+
+[comment]: <> (│   │   │   └───theme)
+
+[comment]: <> (│   │   └───utils)
+
+[comment]: <> (│   ├───@shell)
+
+[comment]: <> (│   │   ├───ft)
+
+[comment]: <> (│   │   └───ui &#40;layout components&#41;)
+
+[comment]: <> (│   │       ├───footer)
+
+[comment]: <> (│   │       ├───header)
+
+[comment]: <> (│   │       ├───layout)
+
+[comment]: <> (│   │       └───not-found)
+
+[comment]: <> (│   ├───components &#40;generic shared components&#41;)
+
+[comment]: <> (│   └───pages)
+
+[comment]: <> (│       ├───auth)
+
+[comment]: <> (│       │   ├───pages)
+
+[comment]: <> (│       │   │   ├───forgot-password)
+
+[comment]: <> (│       │   │   ├───forgot-password-email-sent)
+
+[comment]: <> (│       │   │   ├───password-reset)
+
+[comment]: <> (│       │   │   ├───password-reset-failed)
+
+[comment]: <> (│       │   │   ├───password-reset-succeeded)
+
+[comment]: <> (│       │   │   ├───sign-in)
+
+[comment]: <> (│       │   │   └───sign-up)
+
+[comment]: <> (│       │   └───services)
+
+[comment]: <> (│       ├───dashboard)
+
+[comment]: <> (│       ├───home)
+
+[comment]: <> (│       ├───settings)
+
+[comment]: <> (│       │   └───pages)
+
+[comment]: <> (│       │       ├───account)
+
+[comment]: <> (│       │       ├───appearance)
+
+[comment]: <> (│       │       ├───billing)
+
+[comment]: <> (│       │       ├───blocked-users)
+
+[comment]: <> (│       │       ├───notifications)
+
+[comment]: <> (│       │       ├───security)
+
+[comment]: <> (│       │       └───security-log)
+
+[comment]: <> (│       └───user)
+
+[comment]: <> (│           └───pages)
+
+[comment]: <> (│               ├───my-profile)
+
+[comment]: <> (│               └───overview)
+
+[comment]: <> (├───assets)
+
+[comment]: <> (├───environments)
+
+[comment]: <> (└───theme)
+
+[comment]: <> (    ├───01-base)
+
+[comment]: <> (    ├───02-components)
+
+[comment]: <> (    └───03-utilities)
+
+[comment]: <> (```)
+
+[comment]: <> (## 🧙‍♂️ Commands)
+
+[comment]: <> (| Command       | Description                                                    | NPM                   | Yarn               | Background command                                          |)
+
+[comment]: <> (| ------------- | -------------------------------------------------------------- | --------------------- | ------------------ | ----------------------------------------------------------- |)
+
+[comment]: <> (| ng            | See available commands                                         | npm run ng            | yarn ng            | ng                                                          |)
+
+[comment]: <> (| start         | Run your app in development mode                               | npm start             | yarn start         | ng serve                                                    |)
+
+[comment]: <> (| build         | Build your app for production                                  | npm run build         | yarn build         | ng build                                                    |)
+
+[comment]: <> (| build:stats   | Build your app for production and generate a "stats.json" file | npm run build:stats   | yarn build:stats   | ng build --stats-json                                       |)
+
+[comment]: <> (| watch         | Run build when files change.                                   | npm run watch         | yarn watch         | ng build --watch --configuration development                |)
+
+[comment]: <> (| test:unit     | Run your unit tests                                            | npm run test          | yarn test          | ng test                                                     |)
+
+[comment]: <> (| test:e2e      | Run your e2e tests                                             | npm run e2e           | yarn e2e           | ng e2e                                                      |)
+
+[comment]: <> (| test:coverage | Run your unit tests & generates a coverage report              | npm run test:coverage | yarn test:coverage | ng test --coverage                                          |)
+
+[comment]: <> (| lint          | Use ESLint to lint your app                                    | npm run lint          | yarn lint          | ng lint                                                     |)
+
+[comment]: <> (| analyze       | Open webpack-bundle-analyzer                                   | npm run analyze       | yarn analyze       | webpack-bundle-analyzer dist/angular-boilerplate/stats.json |)

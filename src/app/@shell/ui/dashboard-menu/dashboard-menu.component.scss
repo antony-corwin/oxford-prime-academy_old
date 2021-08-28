@@ -1,0 +1,25 @@
+.menu {
+  background: #FFF;
+
+  &__logo {
+    @apply flex justify-center p-5
+  }
+
+  &__divider {
+    @apply p-4
+  }
+
+  &__container {
+    @apply flex flex-col justify-between flex-grow
+  }
+
+  &__items {
+    @apply flex flex-col
+  }
+
+  &__item {
+    @apply py-4 items-center
+  }
+
+  @apply flex flex-col max-w-xs
+}

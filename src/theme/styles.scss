@@ -49,5 +49,12 @@ $oxford-prime-academy-theme: mat.define-light-theme((
 @layer utilities {
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  //font-size: 10px !important;
+}

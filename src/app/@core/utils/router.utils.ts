@@ -4,6 +4,16 @@ export const ROUTER_UTILS = {
       home: '',
       dashboard: 'dashboard',
     },
+    adminDashboard: {
+      home: '',
+      cms: 'cms',
+      videos: 'videos',
+      users: 'users',
+      school: 'school',
+      billing: 'billing',
+      reports: 'reports',
+      accounting: 'accounting',
+    },
     auth: {
       root: 'auth',
       signIn: 'sign-in',
