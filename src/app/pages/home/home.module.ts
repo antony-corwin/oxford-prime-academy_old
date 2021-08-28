@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { HomePage } from './home.page';
+import { HeaderModule } from '@shell/ui/header/header.module';
 
 @NgModule({
   declarations: [HomePage],
@@ -14,11 +15,12 @@ import { HomePage } from './home.page';
         data: {
           title: 'Home',
           description:
-            'Angular starter for enterprise-grade front-end projects, built under a clean architecture that helps to scale and maintain a fast workflow.',
+            'Oxford Prime Academy',
           robots: 'index, follow',
         },
       },
     ]),
+    HeaderModule,
   ],
 })
 export class HomeModule {}

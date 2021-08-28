@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { AdminDashboardPage } from './admin-dashboard.page';
+import { DashboardMenuModule } from '@shell/ui/dashboard-menu/dashboard-menu.module';
 
 @NgModule({
   declarations: [AdminDashboardPage],
@@ -12,11 +13,12 @@ import { AdminDashboardPage } from './admin-dashboard.page';
         path: '',
         component: AdminDashboardPage,
         data: {
-          title: 'Dashboard',
+          title: 'AdminDashboard',
           robots: 'noindex, nofollow',
         },
       },
     ]),
+    DashboardMenuModule,
   ],
 })
 export class AdminDashboardModule {
