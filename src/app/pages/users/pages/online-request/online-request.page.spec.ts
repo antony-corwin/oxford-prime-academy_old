@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
-import { UsersPage } from '@pages/users/users.page';
+import { OnlineRequestPage } from '@pages/users/pages/online-request/online-request.page';
 
-describe('UsersPage', () => {
-  let component: UsersPage;
-  let fixture: ComponentFixture<UsersPage>;
+describe('OnlineRequestPage', () => {
+  let component: OnlineRequestPage;
+  let fixture: ComponentFixture<OnlineRequestPage>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [UsersPage],
+      declarations: [OnlineRequestPage],
       imports: [RouterTestingModule],
     }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(UsersPage);
+    fixture = TestBed.createComponent(OnlineRequestPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

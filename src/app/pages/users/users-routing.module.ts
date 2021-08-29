@@ -28,22 +28,22 @@ const routes: Routes = [
       {
         path: path.invitation,
         loadChildren: async () =>
-          (await import('@pages/users/pages/users-list/users-list.module')).UsersListModule,
+          (await import('@pages/users/pages/invitation/invitation.module')).InvitationModule,
       },
       {
         path: path.onlineRequest,
         loadChildren: async () =>
-          (await import('@pages/users/pages/users-list/users-list.module')).UsersListModule,
+          (await import('@pages/users/pages/online-request/online-request.module')).OnlineRequestModule,
       },
       {
         path: path.documents,
         loadChildren: async () =>
-          (await import('@pages/users/pages/users-list/users-list.module')).UsersListModule,
+          (await import('@pages/users/pages/documents/documents.module')).DocumentsModule,
       },
       {
         path: path.archive,
         loadChildren: async () =>
-          (await import('@pages/users/pages/users-list/users-list.module')).UsersListModule,
+          (await import('@pages/users/pages/archive/archive.module')).ArchiveModule,
       },
     ],
   },
