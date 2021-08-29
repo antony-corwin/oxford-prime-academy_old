@@ -1,7 +1,11 @@
-<app-header class=''></app-header>
+<app-header class='header'></app-header>
 
-<div class="main container flex-1">
-  <ng-content></ng-content>
-</div>
+<section class='body'>
+  <app-dashboard-menu></app-dashboard-menu>
+  <main class='main'>
+    <ng-content></ng-content>
+  </main>
+</section>
+
 
 <!--<app-footer></app-footer>-->

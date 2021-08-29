@@ -2,7 +2,6 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { HomePage } from './home.page';
-import { HeaderModule } from '@shell/ui/header/header.module';
 
 @NgModule({
   declarations: [HomePage],
@@ -20,7 +19,7 @@ import { HeaderModule } from '@shell/ui/header/header.module';
         },
       },
     ]),
-    HeaderModule,
   ],
 })
-export class HomeModule {}
+export class HomeModule {
+}

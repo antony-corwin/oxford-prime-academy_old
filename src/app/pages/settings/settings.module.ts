@@ -21,4 +21,5 @@ import { SettingsRoutingModule } from './settings-routing.module';
   ],
   imports: [CommonModule, SettingsRoutingModule],
 })
-export class SettingsModule {}
+export class SettingsModule {
+}

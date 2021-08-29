@@ -20,4 +20,5 @@ import { NotFoundPage } from './not-found.page';
     ]),
   ],
 })
-export class NotFoundModule {}
+export class NotFoundModule {
+}

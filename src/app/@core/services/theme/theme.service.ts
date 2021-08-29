@@ -15,7 +15,8 @@ export class ThemeService implements OnDestroy {
     '(prefers-color-scheme: dark)',
   );
 
-  constructor(@Inject(DOCUMENT) private document: Document) {}
+  constructor(@Inject(DOCUMENT) private document: Document) {
+  }
 
   get systemTheme(): ThemeList.Light | ThemeList.Dark {
     return this.mediaQuery.matches ? ThemeList.Dark : ThemeList.Light;
@@ -49,6 +50,11 @@ export class ThemeService implements OnDestroy {
       bodyClass = this.systemTheme;
     }
     this.document.body.classList.add(bodyClass);
+  }
+
+  ngOnDestroy(): void {
+    this.destroy$.complete();
+    this.destroy$.unsubscribe();
   }
 
   /**
@@ -86,10 +92,5 @@ export class ThemeService implements OnDestroy {
       const key: ThemeList = ThemeList[theme as keyof typeof ThemeList];
       this.document.body.classList.remove(key);
     }
-  }
-
-  ngOnDestroy(): void {
-    this.destroy$.complete();
-    this.destroy$.unsubscribe();
   }
 }
