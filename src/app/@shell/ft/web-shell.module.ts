@@ -35,6 +35,12 @@ const APP_ROUTES: Routes = [
     canLoad: [AuthGuard],
   },
   {
+    path: ROUTER_UTILS.config.school.root,
+    loadChildren: async () =>
+      (await import('@pages/school/school.module')).SchoolModule,
+    canLoad: [AuthGuard],
+  },
+  {
     path: ROUTER_UTILS.config.settings.root,
     loadChildren: async () =>
       (await import('@pages/settings/settings.module')).SettingsModule,

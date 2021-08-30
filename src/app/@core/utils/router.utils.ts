@@ -21,13 +21,14 @@ export const ROUTER_UTILS = {
     accounting: 'accounting',
     users: {
       root: 'users',
-      usersList: 'users-list',
+      usersList: 'class-rooms',
       invitation: 'invitation',
-      onlineRequest: 'online-request',
+      onlineRequest: 'student-groups',
       documents: 'documents',
       archive: 'archive',
     },
     school: {
+      root: 'school',
       subjects: 'subjects',
       studentGroups: 'student-groups',
       classRooms: 'class-rooms',

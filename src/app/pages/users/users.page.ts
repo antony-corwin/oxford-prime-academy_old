@@ -12,23 +12,23 @@ export class UsersPage {
   navItems = [
     {
       label: 'Users',
-      link: 'users-list',
+      link: this.path.usersList,
     },
     {
       label: 'Invitation',
-      link: 'invitation',
+      link: this.path.invitation,
     },
     {
       label: 'Online request',
-      link: 'online-request',
+      link: this.path.onlineRequest,
     },
     {
       label: 'Documents',
-      link: 'documents',
+      link: this.path.documents,
     },
     {
       label: 'Archive',
-      link: 'archive',
+      link: this.path.archive,
     },
   ];
 

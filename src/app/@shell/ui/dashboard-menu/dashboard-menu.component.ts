@@ -33,7 +33,7 @@ export class DashboardMenuComponent implements OnInit {
     {
       iconName: 'graduation-hat',
       label: 'School',
-      link: this.path.school,
+      link: this.path.school.root,
     },
     {
       iconName: 'dollar',
