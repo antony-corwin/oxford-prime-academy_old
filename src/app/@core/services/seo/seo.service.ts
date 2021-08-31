@@ -3,7 +3,6 @@ import { Meta, Title } from '@angular/platform-browser';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { Subject } from 'rxjs';
 import { filter, map, takeUntil } from 'rxjs/operators';
-
 @Injectable({
   providedIn: 'root',
 })
@@ -15,8 +14,7 @@ export class SeoService implements OnDestroy {
     private activatedRoute: ActivatedRoute,
     private titleService: Title,
     private metaService: Meta,
-  ) {
-  }
+  ) {}
 
   init(): void {
     const appTitle = this.titleService.getTitle();
@@ -32,11 +30,6 @@ export class SeoService implements OnDestroy {
         this.setDescription(description);
         this.setRobots(robots);
       });
-  }
-
-  ngOnDestroy(): void {
-    this.destroy$.complete();
-    this.destroy$.unsubscribe();
   }
 
   private getLatestChild(): ActivatedRoute {
@@ -71,5 +64,10 @@ export class SeoService implements OnDestroy {
         content: robots,
       });
     }
+  }
+
+  ngOnDestroy(): void {
+    this.destroy$.complete();
+    this.destroy$.unsubscribe();
   }
 }

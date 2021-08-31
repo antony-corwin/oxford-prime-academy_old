@@ -1,28 +1,25 @@
 <section class='menu'>
 
-  <!--  <a class='menu__logo' [routerLink]="['/' + path.root]" routerLinkActive='active'>-->
-  <!--    <img src='./assets/icons/dashboard-menu/logo.svg' alt='logo'>-->
-  <!--  </a>-->
+  <a class='menu__logo' [routerLink]="['/' + path.home]" routerLinkActive='active'>
+    <img src='./assets/icons/dashboard-menu/logo.svg' alt='logo'>
+  </a>
 
-  <!--  <div class='menu__divider'>-->
-  <!--    <mat-divider></mat-divider>-->
-  <!--  </div>-->
+  <div class='menu__divider'>
+    <mat-divider></mat-divider>
+  </div>
 
 
-  <div class='menu__container'>
-    <div class='menu__items'>
+  <div class='menu__container '>
+    <div class='menu__items '>
       <ng-container *ngFor='let menuItem of menuItems'>
-        <a [routerLinkActiveOptions]='{exact: false}'
-           [routerLink]="['/' + menuItem.link]"
-           class='menu__item'
-           routerLinkActive='active'>
-          <mat-icon aria-hidden='false' aria-label='Home' svgIcon='{{menuItem.iconName}}'></mat-icon>
+        <a [routerLink]="['/' + menuItem.link]" routerLinkActive='active' class='menu__item flex flex-col'>
+          <mat-icon svgIcon='{{menuItem.iconName}}' aria-hidden='false' aria-label='Home'></mat-icon>
           <mat-label>{{menuItem.label}}</mat-label>
         </a>
       </ng-container>
     </div>
-    <a [routerLink]="['/' + path.base.home]" class='menu__settings menu__item'>
-      <img alt='settings' src='./assets/icons/dashboard-menu/settings.svg'>
+    <a [routerLink]="['/' + path.home]">
+      <img src='./assets/icons/dashboard-menu/settings.svg' alt='settings'>
     </a>
   </div>
 

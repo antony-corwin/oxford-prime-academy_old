@@ -7,8 +7,7 @@ import { ROUTER_UTILS } from '../utils/router.utils';
   providedIn: 'root',
 })
 export class NoAuthGuard implements CanLoad {
-  constructor(private router: Router, private authService: AuthService) {
-  }
+  constructor(private router: Router, private authService: AuthService) {}
 
   canLoad(): boolean {
     const isLoggedIn = this.authService.isLoggedIn;

@@ -1,8 +1,6 @@
-<svg fill='none' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'>
-  <path clip-rule='evenodd' d='M13 20.9999V12.9999H21V20.9999H13ZM15 14.9999H19L19 18.9999H15V14.9999Z'
-        fill='black' fill-rule='evenodd' />
-  <path clip-rule='evenodd' d='M3 10.9999L3 2.99988L11 2.99988V10.9999H3ZM5 4.99988L9 4.99988V8.99988L5 8.99988L5 4.99988Z'
-        fill='black' fill-rule='evenodd' />
-  <path d='M18 5.99988V11.9999H16V7.99988L12 7.99988V5.99988L18 5.99988Z' fill='black' />
-  <path d='M12 17.9999H6L6 11.9999H8L8 15.9999H12V17.9999Z' fill='black' />
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13 20.9999V12.9999H21V20.9999H13ZM15 14.9999H19L19 18.9999H15V14.9999Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3 10.9999L3 2.99988L11 2.99988V10.9999H3ZM5 4.99988L9 4.99988V8.99988L5 8.99988L5 4.99988Z" fill="black"/>
+<path d="M18 5.99988V11.9999H16V7.99988L12 7.99988V5.99988L18 5.99988Z" fill="black"/>
+<path d="M12 17.9999H6L6 11.9999H8L8 15.9999H12V17.9999Z" fill="black"/>
 </svg>

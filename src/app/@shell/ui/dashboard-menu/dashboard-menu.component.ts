@@ -4,56 +4,55 @@ import { ROUTER_UTILS } from '@core/utils/router.utils';
 @Component({
   selector: 'app-dashboard-menu',
   templateUrl: './dashboard-menu.component.html',
-  styleUrls: ['./dashboard-menu.component.scss'],
+  styleUrls: ['./dashboard-menu.component.scss']
 })
 export class DashboardMenuComponent implements OnInit {
-  path = ROUTER_UTILS.config;
+  path = ROUTER_UTILS.config.adminDashboard;
 
   menuItems = [
     {
       iconName: 'home-alt',
       label: 'Home',
-      link: this.path.base.home,
+      link: ''
     },
     {
       iconName: 'cloud',
       label: 'CMS',
-      link: this.path.cms,
+      link: 'cms'
     },
     {
       iconName: 'film',
       label: 'Videos',
-      link: this.path.videos,
+      link: 'videos'
     },
     {
       iconName: 'user-list',
       label: 'Users',
-      link: this.path.users.root,
+      link: 'users'
     },
     {
       iconName: 'graduation-hat',
       label: 'School',
-      link: this.path.school.root,
+      link: 'school'
     },
     {
       iconName: 'dollar',
       label: 'Billing',
-      link: this.path.billing,
+      link: 'billing'
     },
     {
       iconName: 'clipboard',
       label: 'Reports',
-      link: this.path.reports,
+      link: 'reports'
     },
     {
       iconName: 'calculator',
       label: 'Accounting',
-      link: this.path.accounting,
+      link: 'accounting'
     },
-  ];
+  ]
 
-  constructor() {
-  }
+  constructor() { }
 
   ngOnInit(): void {
   }

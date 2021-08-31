@@ -6,5 +6,5 @@ import { ROUTER_UTILS } from '@app/@core/utils/router.utils';
   styleUrls: ['./not-found.page.scss'],
 })
 export class NotFoundPage {
-  path = ROUTER_UTILS.config.base.home;
+  path = ROUTER_UTILS.config.base;
 }

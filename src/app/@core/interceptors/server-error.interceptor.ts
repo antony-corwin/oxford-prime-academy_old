@@ -1,4 +1,10 @@
-import { HttpErrorResponse, HttpEvent, HttpHandler, HttpInterceptor, HttpRequest } from '@angular/common/http';
+import {
+  HttpErrorResponse,
+  HttpEvent,
+  HttpHandler,
+  HttpInterceptor,
+  HttpRequest,
+} from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { Observable, throwError } from 'rxjs';
@@ -7,8 +13,7 @@ import { ROUTER_UTILS } from '../utils/router.utils';
 
 @Injectable()
 export class ServerErrorInterceptor implements HttpInterceptor {
-  constructor(private router: Router) {
-  }
+  constructor(private router: Router) {}
 
   intercept(
     request: HttpRequest<unknown>,

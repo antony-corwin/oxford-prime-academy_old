@@ -4,5 +4,4 @@ import { Component } from '@angular/core';
   templateUrl: './security.page.html',
   styleUrls: ['./security.page.scss'],
 })
-export class SecurityPage {
-}
+export class SecurityPage {}

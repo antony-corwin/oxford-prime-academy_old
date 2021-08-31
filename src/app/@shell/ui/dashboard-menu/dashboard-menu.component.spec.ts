@@ -8,9 +8,9 @@ describe('DashboardMenuComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [DashboardMenuComponent],
+      declarations: [ DashboardMenuComponent ]
     })
-      .compileComponents();
+    .compileComponents();
   });
 
   beforeEach(() => {

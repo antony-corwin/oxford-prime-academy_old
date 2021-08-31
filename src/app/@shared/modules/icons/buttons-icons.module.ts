@@ -3,68 +3,64 @@ import { CommonModule } from '@angular/common';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { MatIconRegistry } from '@angular/material/icon';
 
-
 @NgModule({
   declarations: [],
-  imports: [
-    CommonModule,
-  ],
+  imports: [CommonModule],
 })
 export class ButtonsIconsModule {
-  private path = {
-    base: './assets/icons',
-    alerts: './assets/icons/alerts',
-    arrows: './assets/icons/arrows',
-    brands: './assets/icons/brands',
-    buttons: './assets/icons/buttons',
-    chevron: './assets/icons/chevron',
-    code: './assets/icons/code',
-    content: './assets/icons/content',
-    dashboardMenu: './assets/icons/dashboard-menu',
-    design: './assets/icons/design',
-    devices: './assets/icons/devices',
-    files: './assets/icons/files',
-    multimedia: './assets/icons/multimedia',
-    other: './assets/icons/other',
-  };
+  private path = './assets/icons/buttons';
 
   constructor(
     private domSanitizer: DomSanitizer,
-    public matIconRegistry: MatIconRegistry) {
-    // BASE
-
-    // ALERTS
-
-    // ARROWS
-
-    // BRANDS
-
-    // BUTTONS
-
-    // CHEVRON
-
-    // CODE
-
-    // CONTENT
-
-    // DASHBOARD-MENU
-
-
+    public matIconRegistry: MatIconRegistry,
+  ) {
     this.matIconRegistry
-      .addSvgIcon('home-alt', this.setPath(`${this.path.other}/home-alt.svg`))
-      .addSvgIcon('cloud', this.setPath(`${this.path.files}/cloud.svg`))
-      .addSvgIcon('film', this.setPath(`${this.path.multimedia}/film.svg`))
-      .addSvgIcon('film', this.setPath(`${this.path.multimedia}/film.svg`))
-      .addSvgIcon('film', this.setPath(`${this.path.multimedia}/film.svg`))
-      .addSvgIcon('film', this.setPath(`${this.path.multimedia}/film.svg`))
-      .addSvgIcon('film', this.setPath(`${this.path.multimedia}/film.svg`))
-      .addSvgIcon('film', this.setPath(`${this.path.multimedia}/film.svg`))
-      .addSvgIcon('film', this.setPath(`${this.path.multimedia}/film.svg`))
-      .addSvgIcon('film', this.setPath(`${this.path.multimedia}/film.svg`))
-      .addSvgIcon('film', this.setPath(`${this.path.multimedia}/film.svg`))
-      .addSvgIcon('film', this.setPath(`${this.path.multimedia}/film.svg`));
-    this.matIconRegistry
-      .addSvgIcon('film', this.setPath(`${this.path.multimedia}/film.svg`));
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
+      .addSvgIcon('add-r', this.setPath(`${this.path}/add-r.svg`))
   }
 
   private setPath(url: string): SafeResourceUrl {

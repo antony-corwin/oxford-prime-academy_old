@@ -4,5 +4,4 @@ import { Component } from '@angular/core';
   templateUrl: './password-reset-succeeded.page.html',
   styleUrls: ['./password-reset-succeeded.page.scss'],
 })
-export class PasswordResetSucceededPage {
-}
+export class PasswordResetSucceededPage {}

@@ -1,8 +1,18 @@
 export const ROUTER_UTILS = {
   config: {
     base: {
-      root: '',
-      home: 'admin-dashboard',
+      home: '',
+      dashboard: 'dashboard',
+    },
+    adminDashboard: {
+      home: '',
+      cms: 'cms',
+      videos: 'videos',
+      users: 'users',
+      school: 'school',
+      billing: 'billing',
+      reports: 'reports',
+      accounting: 'accounting',
     },
     auth: {
       root: 'auth',
@@ -13,27 +23,6 @@ export const ROUTER_UTILS = {
       passwordReset: 'password-reset',
       passwordResetFailed: 'password-reset-failed',
       passwordResetSucceeded: 'password-reset-succeeded',
-    },
-    cms: 'cms',
-    videos: 'videos',
-    billing: 'billing',
-    reports: 'reports',
-    accounting: 'accounting',
-    users: {
-      root: 'users',
-      usersList: 'class-rooms',
-      invitation: 'invitation',
-      onlineRequest: 'student-groups',
-      documents: 'documents',
-      archive: 'archive',
-    },
-    school: {
-      root: 'school',
-      subjects: 'subjects',
-      studentGroups: 'student-groups',
-      classRooms: 'class-rooms',
-      calendar: 'calendar',
-      tuitionTerms: 'tuition-terms',
     },
     settings: {
       root: 'settings',
@@ -46,7 +35,7 @@ export const ROUTER_UTILS = {
       securityLog: 'security-log',
     },
     user: {
-      root: 'user',
+      root: 'users',
       overview: 'overview',
       profile: ':username',
     },

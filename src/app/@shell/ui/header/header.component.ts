@@ -12,8 +12,7 @@ import { AuthService } from '@app/pages/auth/services/auth.service';
 export class HeaderComponent {
   path = ROUTER_UTILS.config.base;
 
-  constructor(private router: Router, private authService: AuthService) {
-  }
+  constructor(private router: Router, private authService: AuthService) {}
 
   onClickSignOut(): void {
     this.authService.signOut();

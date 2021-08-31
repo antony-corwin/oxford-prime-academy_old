@@ -7,5 +7,4 @@ import { BytesPipe } from './bytes.pipe';
   imports: [CommonModule],
   exports: [BytesPipe],
 })
-export class BytesModule {
-}
+export class BytesModule {}

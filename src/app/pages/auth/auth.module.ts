@@ -19,5 +19,4 @@ import { SignUpPage } from './pages/sign-up/sign-up.page';
   ],
   imports: [CommonModule, AuthRoutingModule],
 })
-export class AuthModule {
-}
+export class AuthModule {}

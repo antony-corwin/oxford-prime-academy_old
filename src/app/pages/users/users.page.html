@@ -1,8 +1,0 @@
-<section class='users'>
-  <div class='users__header'>
-    <div class='users__header__title'>{{pageTitle}}</div>
-    <button class='users__header__btn' mat-flat-button>+ create</button>
-  </div>
-  <app-dashboard-nav (changeRouteEvent)='setPageTitle($event)' [navItems]='navItems' [path]='path'></app-dashboard-nav>
-  <router-outlet></router-outlet>
-</section>

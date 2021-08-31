@@ -4,5 +4,4 @@ import { Component } from '@angular/core';
   templateUrl: './billing.page.html',
   styleUrls: ['./billing.page.scss'],
 })
-export class BillingPage {
-}
+export class BillingPage {}
