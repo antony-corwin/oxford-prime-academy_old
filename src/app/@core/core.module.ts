@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { JwtInterceptor, ServerErrorInterceptor } from './interceptors';
 
@@ -15,4 +15,5 @@ import { JwtInterceptor, ServerErrorInterceptor } from './interceptors';
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
   ],
 })
-export class CoreModule {}
+export class CoreModule {
+}

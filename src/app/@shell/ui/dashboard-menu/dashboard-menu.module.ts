@@ -30,10 +30,11 @@ import { ContentIconsModule } from '@app/@shared/modules/icons/content-icons.mod
     DevicesIconsModule,
     ContentIconsModule,
     MultimediaIconsModule,
-    OtherIconsModule
+    OtherIconsModule,
   ],
   exports: [
     DashboardMenuComponent,
   ],
 })
-export class DashboardMenuModule { }
+export class DashboardMenuModule {
+}
