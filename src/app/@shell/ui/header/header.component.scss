@@ -1,0 +1,26 @@
+.search {
+  .p-inputtext {
+    border: none;
+  }
+
+  .p-inputtext:focus {
+    box-shadow: none;
+  }
+
+  .pi {
+    font-size: 1.2rem;
+    font-weight: 900;
+  }
+}
+
+.theme .p-dropdown {
+
+    border: none;
+
+}
+
+.menu {
+  .p-menu {
+    width: 100px;
+  }
+}

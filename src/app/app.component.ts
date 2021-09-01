@@ -3,6 +3,7 @@ import { AuthService } from '@app/pages/auth/services/auth.service';
 import { SeoService } from '@core/services/seo';
 import { ThemeService } from '@core/services/theme';
 import { Observable } from 'rxjs';
+import { PrimengThemeService } from '@core/services/primeng-theme/primeng-theme.service';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,8 @@ export class AppComponent implements OnInit {
   constructor(
     private seoService: SeoService,
     private themeService: ThemeService,
-    private authService: AuthService,
+    private primengThemeService: PrimengThemeService,
+    private authService: AuthService
   ) {
   }
 
