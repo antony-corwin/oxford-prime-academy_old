@@ -17,14 +17,27 @@ const APP_ROUTES: Routes = [
     canLoad: [NoAuthGuard],
   },
   {
+    path: ROUTER_UTILS.config.base.root,
+    loadChildren: async () =>
+      (await import('@pages/home/home.module')).HomeModule,
+    canLoad: [AuthGuard],
+  },
+  {
     path: ROUTER_UTILS.config.base.home,
     loadChildren: async () =>
       (await import('@pages/home/home.module')).HomeModule,
+    canLoad: [AuthGuard],
   },
   {
-    path: ROUTER_UTILS.config.base.dashboard,
+    path: ROUTER_UTILS.config.users.root,
     loadChildren: async () =>
-      (await import('@pages/admin-dashboard/admin-dashboard.module')).AdminDashboardModule,
+      (await import('@pages/users/users.module')).UsersModule,
+    canLoad: [AuthGuard],
+  },
+  {
+    path: ROUTER_UTILS.config.school.root,
+    loadChildren: async () =>
+      (await import('@pages/school/school.module')).SchoolModule,
     canLoad: [AuthGuard],
   },
   {
@@ -64,4 +77,5 @@ const APP_ROUTES: Routes = [
     NotFoundModule,
   ],
 })
-export class WebShellModule {}
+export class WebShellModule {
+}

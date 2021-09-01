@@ -2,10 +2,16 @@
   @apply flex flex-col min-h-full;
 }
 
-app-header {
+.header {
   min-height: 9vh;
 }
 
+.body {
+  @apply flex;
+  min-height: 90vh;
+}
+
 .main {
-  min-height: 91vh;
+  @apply p-10 w-full;
+  background: #EDEDED;
 }

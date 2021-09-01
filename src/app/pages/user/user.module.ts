@@ -8,4 +8,5 @@ import { UserRoutingModule } from './user-routing.module';
   declarations: [MyProfilePage, OverviewPage],
   imports: [CommonModule, UserRoutingModule],
 })
-export class UserModule {}
+export class UserModule {
+}

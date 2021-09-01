@@ -4,4 +4,5 @@ import { Component } from '@angular/core';
   templateUrl: './notifications.page.html',
   styleUrls: ['./notifications.page.scss'],
 })
-export class NotificationsPage {}
+export class NotificationsPage {
+}

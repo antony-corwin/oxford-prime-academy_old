@@ -3,146 +3,68 @@ import { CommonModule } from '@angular/common';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { MatIconRegistry } from '@angular/material/icon';
 
+
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
   ],
 })
-
 export class ArrowsIconsModule {
-  private path = './assets/icons/arrows';
+  private path = {
+    base: './assets/icons',
+    alerts: './assets/icons/alerts',
+    arrows: './assets/icons/arrows',
+    brands: './assets/icons/brands',
+    buttons: './assets/icons/buttons',
+    chevron: './assets/icons/chevron',
+    code: './assets/icons/code',
+    content: './assets/icons/content',
+    dashboardMenu: './assets/icons/dashboard-menu',
+    design: './assets/icons/design',
+    devices: './assets/icons/devices',
+    files: './assets/icons/files',
+    multimedia: './assets/icons/multimedia',
+    other: './assets/icons/other',
+  };
 
   constructor(
     private domSanitizer: DomSanitizer,
     public matIconRegistry: MatIconRegistry) {
+    // BASE
+
+    // ALERTS
+
+    // ARROWS
+
+    // BRANDS
+
+    // BUTTONS
+
+    // CHEVRON
+
+    // CODE
+
+    // CONTENT
+
+    // DASHBOARD-MENU
+
 
     this.matIconRegistry
-      .addSvgIcon('arrow-bottom-left-o', this.setPath(`${this.path}/arrow-bottom-left-o.svg`))
-      .addSvgIcon('arrow-bottom-left-r', this.setPath(`${this.path}/arrow-bottom-left-r.svg`))
-      .addSvgIcon('arrow-bottom-left', this.setPath(`${this.path}/arrow-bottom-left.svg`))
-      .addSvgIcon('arrow-bottom-right-o', this.setPath(`${this.path}/arrow-bottom-right-o.svg`))
-      .addSvgIcon('arrow-bottom-right-r', this.setPath(`${this.path}/arrow-bottom-right-r.svg`))
-      .addSvgIcon('arrow-bottom-right', this.setPath(`${this.path}/arrow-bottom-right.svg`))
-      .addSvgIcon('arrow-down-o', this.setPath(`${this.path}/arrow-down-o.svg`))
-      .addSvgIcon('arrow-down-r', this.setPath(`${this.path}/arrow-down-r.svg`))
-      .addSvgIcon('arrow-down', this.setPath(`${this.path}/arrow-down.svg`))
-      .addSvgIcon('arrow-left-o', this.setPath(`${this.path}/arrow-left-o.svg`))
-      .addSvgIcon('arrow-left-r', this.setPath(`${this.path}/arrow-left-r.svg`))
-      .addSvgIcon('arrow-long-up', this.setPath(`${this.path}/arrow-long-up.svg`))
-      .addSvgIcon('arrow-right-o', this.setPath(`${this.path}/arrow-right-o.svg`))
-      .addSvgIcon('arrow-right-r', this.setPath(`${this.path}/arrow-right-r.svg`))
-      .addSvgIcon('arrow-right', this.setPath(`${this.path}/arrow-right.svg`))
-      .addSvgIcon('arrow-top-left-o', this.setPath(`${this.path}/arrow-top-left-o.svg`))
-      .addSvgIcon('arrow-top-left-r', this.setPath(`${this.path}/arrow-top-left-r.svg`))
-      .addSvgIcon('arrow-top-left', this.setPath(`${this.path}/arrow-top-left.svg`))
-      .addSvgIcon('arrow-top-right-o', this.setPath(`${this.path}/arrow-top-right-o.svg`))
-      .addSvgIcon('arrow-top-right-r', this.setPath(`${this.path}/arrow-top-right-r.svg`))
-      .addSvgIcon('arrow-top-right', this.setPath(`${this.path}/arrow-top-right.svg`))
-      .addSvgIcon('arrow-up-o', this.setPath(`${this.path}/arrow-up-o.svg`))
-      .addSvgIcon('arrow-up-r', this.setPath(`${this.path}/arrow-up-r.svg`))
-      .addSvgIcon('arrow-up', this.setPath(`${this.path}/arrow-up.svg`))
-      .addSvgIcon('check-o', this.setPath(`${this.path}/check-o.svg`))
-      .addSvgIcon('check-r', this.setPath(`${this.path}/check-r.svg`))
-      .addSvgIcon('check', this.setPath(`${this.path}/check.svg`))
-      .addSvgIcon('arrow-align-h', this.setPath(`${this.path}/arrow-align-h.svg`))
-      .addSvgIcon('arrow-align-v', this.setPath(`${this.path}/arrow-align-v.svg`))
-      .addSvgIcon('arrow-left', this.setPath(`${this.path}/arrow-left.svg`))
-      .addSvgIcon('arrow-long-down-c', this.setPath(`${this.path}/arrow-long-down-c.svg`))
-      .addSvgIcon('arrow-long-down-e', this.setPath(`${this.path}/arrow-long-down-e.svg`))
-      .addSvgIcon('arrow-long-down-l', this.setPath(`${this.path}/arrow-long-down-l.svg`))
-      .addSvgIcon('arrow-long-down-r', this.setPath(`${this.path}/arrow-long-down-r.svg`))
-      .addSvgIcon('arrow-long-down', this.setPath(`${this.path}/arrow-long-down.svg`))
-      .addSvgIcon('arrow-long-left-c', this.setPath(`${this.path}/arrow-long-left-c.svg`))
-      .addSvgIcon('arrow-long-left-e', this.setPath(`${this.path}/arrow-long-left-e.svg`))
-      .addSvgIcon('arrow-long-left-l', this.setPath(`${this.path}/arrow-long-left-l.svg`))
-      .addSvgIcon('arrow-long-left-r', this.setPath(`${this.path}/arrow-long-left-r.svg`))
-      .addSvgIcon('arrow-long-left', this.setPath(`${this.path}/arrow-long-left.svg`))
-      .addSvgIcon('arrow-long-right-c', this.setPath(`${this.path}/arrow-long-right-c.svg`))
-      .addSvgIcon('arrow-long-right-e', this.setPath(`${this.path}/arrow-long-right-e.svg`))
-      .addSvgIcon('arrow-long-right-l', this.setPath(`${this.path}/arrow-long-right-l.svg`))
-      .addSvgIcon('arrow-long-right-r', this.setPath(`${this.path}/arrow-long-right-r.svg`))
-      .addSvgIcon('arrow-long-right', this.setPath(`${this.path}/arrow-long-right.svg`))
-      .addSvgIcon('arrow-long-up-c', this.setPath(`${this.path}/arrow-long-up-c.svg`))
-      .addSvgIcon('arrow-long-up-e', this.setPath(`${this.path}/arrow-long-up-e.svg`))
-      .addSvgIcon('arrow-long-up-l', this.setPath(`${this.path}/arrow-long-up-l.svg`))
-      .addSvgIcon('arrow-long-up-r', this.setPath(`${this.path}/arrow-long-up-r.svg`))
-      .addSvgIcon('arrows-breake-h', this.setPath(`${this.path}/arrows-breake-h.svg`))
-      .addSvgIcon('arrows-breake-v', this.setPath(`${this.path}/arrows-breake-v.svg`))
-      .addSvgIcon('arrows-exchange-alt-v', this.setPath(`${this.path}/arrows-exchange-alt-v.svg`))
-      .addSvgIcon('arrows-exchange-alt', this.setPath(`${this.path}/arrows-exchange-alt.svg`))
-      .addSvgIcon('arrows-exchange-v', this.setPath(`${this.path}/arrows-exchange-v.svg`))
-      .addSvgIcon('arrows-exchange', this.setPath(`${this.path}/arrows-exchange.svg`))
-      .addSvgIcon('arrows-expand-down-left', this.setPath(`${this.path}/arrows-expand-down-left.svg`))
-      .addSvgIcon('arrows-expand-down-right', this.setPath(`${this.path}/arrows-expand-down-right.svg`))
-      .addSvgIcon('arrows-expand-left-alt', this.setPath(`${this.path}/arrows-expand-left-alt.svg`))
-      .addSvgIcon('arrows-expand-left', this.setPath(`${this.path}/arrows-expand-left.svg`))
-      .addSvgIcon('arrows-expand-right-alt', this.setPath(`${this.path}/arrows-expand-right-alt.svg`))
-      .addSvgIcon('arrows-expand-up-left', this.setPath(`${this.path}/arrows-expand-up-left.svg`))
-      .addSvgIcon('arrows-expand-up-right', this.setPath(`${this.path}/arrows-expand-up-right.svg`))
-      .addSvgIcon('arrows-h-alt', this.setPath(`${this.path}/arrows-h-alt.svg`))
-      .addSvgIcon('arrows-h', this.setPath(`${this.path}/arrows-h.svg`))
-      .addSvgIcon('arrows-merge-alt-h', this.setPath(`${this.path}/arrows-merge-alt-h.svg`))
-      .addSvgIcon('arrows-merge-alt-v', this.setPath(`${this.path}/arrows-merge-alt-v.svg`))
-      .addSvgIcon('arrows-scroll-h', this.setPath(`${this.path}/arrows-scroll-h.svg`))
-      .addSvgIcon('arrows-scroll-v', this.setPath(`${this.path}/arrows-scroll-v.svg`))
-      .addSvgIcon('arrows-shrink-h', this.setPath(`${this.path}/arrows-shrink-h.svg`))
-      .addSvgIcon('arrows-shrink-v', this.setPath(`${this.path}/arrows-shrink-v.svg`))
-      .addSvgIcon('arrows-v-alt', this.setPath(`${this.path}/arrows-v-alt.svg`))
-      .addSvgIcon('arrows-v', this.setPath(`${this.path}/arrows-v.svg`))
-      .addSvgIcon('compress-left', this.setPath(`${this.path}/compress-left.svg`))
-      .addSvgIcon('compress-right', this.setPath(`${this.path}/compress-right.svg`))
-      .addSvgIcon('compress-v', this.setPath(`${this.path}/compress-v.svg`))
-      .addSvgIcon('compress', this.setPath(`${this.path}/compress.svg`))
-      .addSvgIcon('corner-double-down-left', this.setPath(`${this.path}/corner-double-down-left.svg`))
-      .addSvgIcon('corner-double-down-right', this.setPath(`${this.path}/corner-double-down-right.svg`))
-      .addSvgIcon('corner-double-left-down', this.setPath(`${this.path}/corner-double-left-down.svg`))
-      .addSvgIcon('corner-double-left-up', this.setPath(`${this.path}/corner-double-left-up.svg`))
-      .addSvgIcon('corner-double-right-down', this.setPath(`${this.path}/corner-double-right-down.svg`))
-      .addSvgIcon('corner-double-right-up', this.setPath(`${this.path}/corner-double-right-up.svg`))
-      .addSvgIcon('corner-double-up-left', this.setPath(`${this.path}/corner-double-up-left.svg`))
-      .addSvgIcon('corner-double-right-up', this.setPath(`${this.path}/corner-double-right-up.svg`))
-      .addSvgIcon('corner-down-left', this.setPath(`${this.path}/corner-down-left.svg`))
-      .addSvgIcon('corner-down-right', this.setPath(`${this.path}/corner-down-right.svg`))
-      .addSvgIcon('corner-left-down', this.setPath(`${this.path}/corner-left-down.svg`))
-      .addSvgIcon('corner-left-up', this.setPath(`${this.path}/corner-left-up.svg`))
-      .addSvgIcon('corner-right-down', this.setPath(`${this.path}/corner-right-down.svg`))
-      .addSvgIcon('corner-right-up', this.setPath(`${this.path}/corner-right-up.svg`))
-      .addSvgIcon('corner-up-left', this.setPath(`${this.path}/corner-up-left.svg`))
-      .addSvgIcon('corner-up-right', this.setPath(`${this.path}/corner-up-right.svg`))
-      .addSvgIcon('enter', this.setPath(`${this.path}/enter.svg`))
-      .addSvgIcon('expand', this.setPath(`${this.path}/expand.svg`))
-      .addSvgIcon('export', this.setPath(`${this.path}/export.svg`))
-      .addSvgIcon('import', this.setPath(`${this.path}/import.svg`))
-      .addSvgIcon('internal', this.setPath(`${this.path}/internal.svg`))
-      .addSvgIcon('merge-horizontal', this.setPath(`${this.path}/merge-horizontal.svg`))
-      .addSvgIcon('merge-vertical', this.setPath(`${this.path}/merge-vertical.svg`))
-      .addSvgIcon('minimize-alt', this.setPath(`${this.path}/minimize-alt.svg`))
-      .addSvgIcon('minimize', this.setPath(`${this.path}/minimize.svg`))
-      .addSvgIcon('move-down', this.setPath(`${this.path}/move-down.svg`))
-      .addSvgIcon('move-left', this.setPath(`${this.path}/move-left.svg`))
-      .addSvgIcon('move-right', this.setPath(`${this.path}/move-right.svg`))
-      .addSvgIcon('move-task', this.setPath(`${this.path}/move-task.svg`))
-      .addSvgIcon('move-up', this.setPath(`${this.path}/move-up.svg`))
-      .addSvgIcon('push-down', this.setPath(`${this.path}/push-down.svg`))
-      .addSvgIcon('push-left', this.setPath(`${this.path}/push-left.svg`))
-      .addSvgIcon('push-right', this.setPath(`${this.path}/push-right.svg`))
-      .addSvgIcon('push-up', this.setPath(`${this.path}/push-up.svg`))
-      .addSvgIcon('redo', this.setPath(`${this.path}/redo.svg`))
-      .addSvgIcon('repeat', this.setPath(`${this.path}/repeat.svg`))
-      .addSvgIcon('scroll-h', this.setPath(`${this.path}/scroll-h.svg`))
-      .addSvgIcon('scroll-v', this.setPath(`${this.path}/scroll-v.svg`))
-      .addSvgIcon('select-o', this.setPath(`${this.path}/select-o.svg`))
-      .addSvgIcon('select-r', this.setPath(`${this.path}/select-r.svg`))
-      .addSvgIcon('select', this.setPath(`${this.path}/select.svg`))
-      .addSvgIcon('swap-vertical', this.setPath(`${this.path}/swap-vertical.svg`))
-      .addSvgIcon('swap', this.setPath(`${this.path}/swap.svg`))
-      .addSvgIcon('sync', this.setPath(`${this.path}/sync.svg`))
-      .addSvgIcon('trending-down', this.setPath(`${this.path}/trending-down.svg`))
-      .addSvgIcon('trending', this.setPath(`${this.path}/trending.svg`))
-      .addSvgIcon('undo', this.setPath(`${this.path}/undo.svg`))
-      .addSvgIcon('check-r', this.setPath(`${this.path}/check-r.svg`))
-      .addSvgIcon('check-filled', this.setPath(`${this.path}/check-filled.svg`))
+      .addSvgIcon('home-alt', this.setPath(`${this.path.other}/home-alt.svg`))
+      .addSvgIcon('cloud', this.setPath(`${this.path.files}/cloud.svg`))
+      .addSvgIcon('film', this.setPath(`${this.path.multimedia}/film.svg`))
+      .addSvgIcon('film', this.setPath(`${this.path.multimedia}/film.svg`))
+      .addSvgIcon('film', this.setPath(`${this.path.multimedia}/film.svg`))
+      .addSvgIcon('film', this.setPath(`${this.path.multimedia}/film.svg`))
+      .addSvgIcon('film', this.setPath(`${this.path.multimedia}/film.svg`))
+      .addSvgIcon('film', this.setPath(`${this.path.multimedia}/film.svg`))
+      .addSvgIcon('film', this.setPath(`${this.path.multimedia}/film.svg`))
+      .addSvgIcon('film', this.setPath(`${this.path.multimedia}/film.svg`))
+      .addSvgIcon('film', this.setPath(`${this.path.multimedia}/film.svg`))
+      .addSvgIcon('film', this.setPath(`${this.path.multimedia}/film.svg`));
+    this.matIconRegistry
+      .addSvgIcon('film', this.setPath(`${this.path.multimedia}/film.svg`));
   }
 
   private setPath(url: string): SafeResourceUrl {

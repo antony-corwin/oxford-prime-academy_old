@@ -1,0 +1,26 @@
+.nav {
+  @apply mb-1.5 w-full flex flex-row justify-items-start items-end list-none;
+  background: #FFF;
+
+  &__items {
+
+  }
+
+  &__item {
+    @apply mx-0.5 p-4 border-b-0 font-bold inline-block;
+
+    &:hover {
+      border-bottom: 5px solid #000;
+      margin-bottom: -5px;
+    }
+
+    &.active {
+      border-bottom: 5px solid #000;
+      margin-bottom: -5px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+}

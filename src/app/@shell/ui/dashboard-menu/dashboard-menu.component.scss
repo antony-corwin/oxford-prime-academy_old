@@ -1,25 +1,37 @@
 .menu {
+  @apply w-24 flex flex-col max-w-xs;
   background: #FFF;
+  min-height: 90vh;
 
-  &__logo {
-    @apply flex justify-center p-5
-  }
-
-  &__divider {
-    @apply p-4
-  }
+  //&__logo {
+  //  @apply  p-4 flex justify-center;
+  //}
+  //
+  //&__divider {
+  //  @apply py-2 px-4;
+  //}
 
   &__container {
-    @apply flex flex-col justify-between flex-grow
+    @apply flex flex-col justify-between flex-grow;
   }
 
   &__items {
-    @apply flex flex-col
+    @apply pt-2 flex flex-col;
   }
 
   &__item {
-    @apply py-4 items-center
+    @apply py-3 flex flex-col items-center opacity-25;
   }
 
-  @apply flex flex-col max-w-xs
+  &__item:hover {
+    @apply opacity-100
+  }
+
+  &__item.active {
+    @apply opacity-100
+  }
+
+  &__settings {
+    @apply pb-6 flex justify-center;
+  }
 }
