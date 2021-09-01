@@ -22,12 +22,6 @@ const APP_ROUTES: Routes = [
       (await import('@pages/home/home.module')).HomeModule,
   },
   {
-    path: ROUTER_UTILS.config.base.dashboard,
-    loadChildren: async () =>
-      (await import('@pages/admin-dashboard/admin-dashboard.module')).AdminDashboardModule,
-    canLoad: [AuthGuard],
-  },
-  {
     path: ROUTER_UTILS.config.settings.root,
     loadChildren: async () =>
       (await import('@pages/settings/settings.module')).SettingsModule,

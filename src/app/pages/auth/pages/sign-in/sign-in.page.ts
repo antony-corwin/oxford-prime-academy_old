@@ -9,6 +9,8 @@ import { AuthService } from '../../services/auth.service';
 })
 export class SignInPage {
   returnUrl: string;
+  email: string = '';
+  password: string = '';
 
   constructor(
     private router: Router,
@@ -23,5 +25,9 @@ export class SignInPage {
   onClickSignIn(): void {
     this.authService.signIn();
     this.router.navigate([this.returnUrl]);
+  }
+
+  onClickClearValue():void {
+    this.email = '';
   }
 }
