@@ -1,0 +1,127 @@
+
+<p-accordion [multiple]="true">
+  <p-accordionTab header="Main info">
+    <ng-container *ngIf='edit'>
+      <p class='text-1.5xl font-bold'>
+        First name
+      </p>
+      <p>{{user.firstName}}</p>
+      <p class='text-1.5xl font-bold'>
+        First name
+      </p>
+      <p>{{user.firstName}}</p>
+      <p class='text-1.5xl font-bold'>
+        First name
+      </p>
+      <p>{{user.firstName}}</p>
+      <p class='text-1.5xl font-bold'>
+        First name
+      </p>
+      <p>{{user.firstName}}</p>
+      <p class='text-1.5xl font-bold'>
+        First name
+      </p>
+      <p>{{user.firstName}}</p>
+    </ng-container>
+    <ng-container *ngIf='!edit'>
+      <div class="card">
+        <h5>Vertical and Grid</h5>
+        <div class="p-fluid p-formgrid p-grid">
+          <div class="p-field p-col">
+            <label for="firstname2">Firstname</label>
+            <input id="firstname2" type="text" pInputText />
+          </div>
+          <div class="p-field p-col">
+            <label for="lastname2">Lastname</label>
+            <input id="lastname2" type="text" pInputText />
+          </div>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="col-12 md:col-6 lg:col-3 sm:flex-nowrap">A</div>
+        <div class="col-12 md:col-6 lg:col-3">B</div>
+        <div class="col-12 md:col-6 lg:col-3">C</div>
+        <div class="col-12 md:col-6 lg:col-3">D</div>
+      </div>
+
+      <div class="card">
+        <div class="p-fluid p-formgrid p-grid">
+          <div class="p-field col-12 md:col-6 lg:col-6">
+            <label for="firstname6">Firstname</label>
+            <input id="firstname6" type="text" pInputText />
+          </div>
+          <div class="p-field col-12 md:col-6 lg:col-6">
+            <label for="lastname6">Lastname</label>
+            <input id="lastname6" type="text" pInputText />
+          </div>
+          <div class="p-field col-12 md:col-6 lg:col-6">
+            <label for="address">Address</label>
+            <textarea id="address" type="text" rows="4" pInputTextarea></textarea>
+          </div>
+          <div class="p-field col-12 md:col-6 lg:col-6">
+            <label for="city">City</label>
+            <input id="city" type="text" pInputText />
+          </div>
+<!--          <div class="p-field p-col-12 p-md-3">-->
+<!--            <label for="state">State</label>-->
+<!--            <p-dropdown-->
+<!--              inputId="state"-->
+<!--              [options]="states"-->
+<!--              [(ngModel)]="selectedState"-->
+<!--              placeholder="Select"-->
+<!--              optionLabel="name"-->
+<!--            ></p-dropdown>-->
+<!--          </div>-->
+          <div class="p-field col-12 md:col-6 lg:col-6">
+            <label for="zip">Zip</label>
+            <input id="zip" type="text" pInputText />
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </p-accordionTab>
+  <p-accordionTab header="Contact info">
+    Content 2
+  </p-accordionTab>
+  <p-accordionTab header="Additional info">
+    Content 3
+  </p-accordionTab>
+</p-accordion>
+
+Main info
+
+
+ваыва
+Surname
+вавава
+Email
+user_6@oxfordprime.com
+Role
+Parent
+Status
+Active
+
+Contact info
+
+Phone
+380685062303
+Country
+Ukraine
+City
+Kyiv
+Address
+Kyiv Ulitsa
+Post code
+04111
+
+Additional info
+
+Gender
+Male
+Prefix
+Mr
+Passport ID
+National identification number
+Country of Issue
+Ukraine

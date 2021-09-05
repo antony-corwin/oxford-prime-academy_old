@@ -27,6 +27,9 @@ $oxford-prime-academy-theme: mat.define-light-theme((
   )
 ));
 
+
+
+
 // Include theme themes for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
@@ -47,6 +50,7 @@ $oxford-prime-academy-theme: mat.define-light-theme((
 }
 
 @layer utilities {
+  @import "03-utilities/primeng-theme-override";
 }
 
 html, body {

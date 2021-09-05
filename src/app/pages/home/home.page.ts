@@ -6,6 +6,7 @@ import { MessageService, PrimeNGConfig } from 'primeng/api';
 @Component({
   templateUrl: './home.page.html',
   styleUrls: ['./home.page.scss'],
+  providers: [MessageService]
 })
 export class HomePage {
   path = ROUTER_UTILS.config;
@@ -24,11 +25,12 @@ export class HomePage {
   }
 
   showSuccess(): void {
+    // TODO move to auth service
     this.messageService.add({ severity: 'success', summary: 'Success', detail: 'Logged in successfully' });
   }
 
-  ngAfterViewInit() {
-    this.showSuccess();
-  }
+  // ngAfterViewInit() {
+  //   this.showSuccess();
+  // }
 
 }

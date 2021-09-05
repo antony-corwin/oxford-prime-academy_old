@@ -1,12 +1,36 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ROUTER_UTILS } from '@app/@core/utils/router.utils';
-import { MyProfilePage } from './pages/my-profile/my-profile.page';
-import { OverviewPage } from './pages/overview/overview.page';
+import { UserPage } from '@pages/user/user.page';
+
+const path = ROUTER_UTILS.config.user;
 
 const routes: Routes = [
-  { path: ROUTER_UTILS.config.user.profile, component: MyProfilePage },
-  { path: ROUTER_UTILS.config.user.overview, component: OverviewPage },
+  {
+    path: '',
+    component: UserPage,
+    data: {
+      title: 'User',
+      robots: 'noindex, nofollow',
+    },
+    children: [
+      {
+        path: '',
+        redirectTo: path.profile,
+        pathMatch: 'full',
+      },
+      {
+        path: path.profile,
+        loadChildren: async () =>
+          (await import('@pages/user/pages/profile/profile.module')).ProfileModule,
+      },
+      {
+        path: path.accounting,
+        loadChildren: async () =>
+          (await import('@pages/user/pages/accounting/accounting.module')).AccountingModule,
+      },
+    ],
+  },
 ];
 
 @NgModule({

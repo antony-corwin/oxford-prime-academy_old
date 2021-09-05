@@ -1,0 +1,9 @@
+.user {
+  &__header {
+    @apply pb-6;
+
+    &__title {
+      @apply text-lg font-semibold cursor-pointer;
+    }
+  }
+}

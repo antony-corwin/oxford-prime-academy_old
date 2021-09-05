@@ -1,1 +1,110 @@
-<h1>USERS LIST</h1>
+<div class='card'>
+  <p-table #dt class='users-list'
+           styleClass="p-datatable-sm"
+           [value]='users'
+           responsiveLayout='scroll'
+           sortMode='multiple'
+           [rows]='10'
+           [paginator]='true'
+           dataKey='id'
+           selectionMode='single'
+           [(selection)]='selectedUsers'
+           [showCurrentPageReport]="true"
+           [globalFilterFields]="['id','name','email','role','status']">
+
+    <ng-template pTemplate='caption'>
+      <div class='flex flex-row justify-between p-d-flex'>
+        <div>
+                  <span class='p-input-icon-left p-ml-auto'>
+          <i class='pi pi-search'></i>
+          <input pInputText type='text' (input)="dt.filterGlobal($event?.target?.value, 'contains')"
+                 placeholder='Search here...' />
+         </span>
+        </div>
+        <div class='flex flex-row justify-between gap-4'>
+          <p-columnFilter field='role' matchMode='equals' [showMenu]='false'>
+            <ng-template pTemplate='filter' let-value let-filter='filterCallback'>
+              <p-dropdown [ngModel]='value' [options]='filters' (onChange)='filter($event.value)'
+                          placeholder='Filters' [showClear]='true'>
+                <ng-template let-option pTemplate='item'>
+                  <span [class]="'customer-badge status-' + option.value">{{option.label}}</span>
+                </ng-template>
+              </p-dropdown>
+            </ng-template>
+          </p-columnFilter>
+          <p-button class='export-btn' (click)="showDialog()" icon="pi pi-external-link" label="Export"></p-button>
+          <p-dialog header="Choose data for export" [(visible)]="display" [modal]="true" [baseZIndex]="10000"
+                    [draggable]="false" [resizable]="false">
+
+            <div *ngFor="let exportType of exportTypes" class="p-field-checkbox">
+              <p-checkbox name="group2" value="exportType" [value]="exportType"  [(ngModel)]="selectedExportTypes" [inputId]="exportType.key"></p-checkbox>
+              <label [for]="exportType.key" style='padding: 1rem;'>{{exportType.name}}</label>
+            </div>
+
+
+            <ng-template pTemplate="footer">
+              <button type='button' pButton pRipple icon='pi pi-file-o' (click)='dt.exportCSV()' class='p-mr-2' pTooltip='CSV'
+                      tooltipPosition='bottom'>
+              </button>
+              <!--        <button type="button" pButton pRipple icon="pi pi-file-excel" (click)="exportExcel()" class="p-button-success p-mr-2"  pTooltip="XLS" tooltipPosition="bottom"></button>-->
+              <button type='button' pButton pRipple icon='pi pi-filter' (click)='dt.exportCSV({selectionOnly:true})'
+                      class='p-button-info p-ml-auto' pTooltip='Selection Only' tooltipPosition='bottom'>
+              </button>
+              <p-button class='export-btn p-button-text' (click)="display=false" label="Export"></p-button>
+            </ng-template>
+
+          </p-dialog>
+        </div>
+      </div>
+    </ng-template>
+
+    <ng-template pTemplate='header'>
+      <tr>
+        <th pSortableColumn='id' style='width: 5%;'>#
+        </th>
+        <th pSortableColumn='name' style='width: 30%;'>Full Name
+          <p-sortIcon field='name'></p-sortIcon>
+        </th>
+        <th pSortableColumn='email' style='width: 25%;'>Email
+          <p-sortIcon field='email'></p-sortIcon>
+        </th>
+        <th pSortableColumn='role' style='width: 15%;'>Role
+          <p-sortIcon field='role'></p-sortIcon>
+        </th>
+        <th pSortableColumn='status' style='width: 15%;'>Status
+          <p-sortIcon field='status'></p-sortIcon>
+        </th>
+        <th style='width: 10%;'>Actions</th>
+      </tr>
+    </ng-template>
+
+    <ng-template pTemplate='body' let-user>
+      <tr [pSelectableRow]='user'>
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.role}}</td>
+        <td>{{user.status}}</td>
+        <td>
+          <pre>
+            {{user | json}}
+          </pre>
+
+          <button pButton pRipple type='button' icon='pi pi-pencil' [routerLink]='"/user"' [state]='{ data: user}'
+                  class='op-theme-clr p-button-rounded p-button-text'></button>
+          <button pButton pRipple type='button' icon='pi pi-trash'
+                  class='op-theme-clr p-button-rounded p-button-text'></button>
+        </td>
+      </tr>
+    </ng-template>
+
+    <ng-template pTemplate='emptymessage'>
+      <tr>
+        <td colspan='12'>No users found.</td>
+      </tr>
+    </ng-template>
+
+  </p-table>
+</div>
+
+

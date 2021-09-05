@@ -1,0 +1,12 @@
+<section class='user'>
+  <div class='user__header'>
+    <div class='user__header__title'>
+      <a (click)='back()'>
+        <i class='pi pi-arrow-circle-left'></i>Back /
+      </a>
+      {{pageTitle}}
+    </div>
+  </div>
+  <app-dashboard-nav (changeRouteEvent)='setPageTitle($event)' [navItems]='navItems' [path]='path'></app-dashboard-nav>
+  <router-outlet></router-outlet>
+</section>

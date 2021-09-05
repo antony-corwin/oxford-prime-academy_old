@@ -1,1 +1,11 @@
+.users-list {
+  td {
+    //padding: 0 0.75rem !important;
+  }
+}
 
+:host ::ng-deep .export-btn {
+  .p-button {
+    background: #000;
+  }
+}

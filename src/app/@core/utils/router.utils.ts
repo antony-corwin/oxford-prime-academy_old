@@ -21,9 +21,9 @@ export const ROUTER_UTILS = {
     accounting: 'accounting',
     users: {
       root: 'users',
-      usersList: 'class-rooms',
+      usersList: 'users-list',
       invitation: 'invitation',
-      onlineRequest: 'student-groups',
+      onlineRequest: 'online-request',
       documents: 'documents',
       archive: 'archive',
     },
@@ -47,8 +47,8 @@ export const ROUTER_UTILS = {
     },
     user: {
       root: 'user',
-      overview: 'overview',
-      profile: ':username',
+      profile: 'profile',
+      accounting: 'accounting',
     },
     errorResponse: {
       notFound: '404',

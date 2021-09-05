@@ -29,5 +29,6 @@ export class AppComponent implements OnInit {
   private runGlobalServices(): void {
     this.seoService.init();
     this.themeService.init();
+    this.primengThemeService.init();
   }
 }
